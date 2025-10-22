@@ -55,6 +55,7 @@ footer {
   color: white; /* Texte blanc */
   border-radius: 50px; /* Coins arrondis */
   padding: 20px 30px; /* Espacement intérieur du bouton */
+  margin: 40px;
 }
 
 /* Effet au survol des liens */
@@ -82,7 +83,8 @@ a:hover {
 .carre-contenu {
   border-right: 1px solid #8e86b5; /* Bord droit violet */
   border-bottom: 1px solid #8e86b5; /* Bord inférieur violet */
-  padding: 50px; /* Espacement intérieur */
+  padding: 50px;
+  margin-bottom: 80px; /* Espacement intérieur */
 }
 
 /* Titre dans le carré */
@@ -93,6 +95,9 @@ a:hover {
 /* Liste dans le carré */
 .carre-contenu ul {
   margin-top: 30px; /* Espace au-dessus de la liste */
+}
+.carre-contenu + div {
+  text-align: center;
 }
 
 /* Section générale */
@@ -116,16 +121,17 @@ footer, nav {
 
 /* Introduction sur la page d'accueil */
 .accueil-intro {
-  display: flex; /* Flexbox */
-  flex-direction: row; /* Alignement horizontal */
-  align-items: center; /* Centré verticalement */
-  width: 50%; /* Largeur de 50% */
-  margin: auto; /* Centré horizontalement */
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  align-items: flex-start;
+  margin: auto;
 }
 
 /* Espacement des liens dans le nav */
 nav a {
-  margin-left: 30px; /* Décalage à gauche pour espacer les liens */
+  margin-left: 30px;
+   /* Décalage à gauche pour espacer les liens */
 }
 
 /* Conteneur pour les photos de l'accueil */
@@ -150,6 +156,17 @@ nav a {
   background-color: white; /* Fond blanc */
   padding: 80px; /* Espacement intérieur */
 }
+.accueil-introduction h1 {
+  margin-bottom: 15px;
+}
+
+.accueil-introduction p {
+  margin-bottom: 30px;
+}
+
+.accueil-introduction div {
+  padding-right: 80px;
+}
 
 /* Section portfolio */
 .portfolio-section-photos {
@@ -159,7 +176,8 @@ nav a {
 /* Titre portfolio */
 .portfolio-section-photos h2 {
   color: #242424; /* Couleur sombre */
-  margin-bottom: 80px; /* Marge sous le titre */
+  margin-bottom: 30px; /* Marge sous le titre */
+  margin-top: 30px;
 }
 
 /* Grille pour paysages */
