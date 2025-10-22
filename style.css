@@ -1,148 +1,212 @@
+/* Sélecteur universel : s'applique à tous les éléments HTML */
 * {
-  margin: 0;
+  margin: 0; /* Supprime toutes les marges par défaut pour avoir un point de départ uniforme */
 }
 
+/* Styles globaux pour le corps de la page */
 body {
-  font-family: 'Manrope', sans-serif;
-  font-size: 1em;
-  background-color: #1f2039;
+  font-family: 'Manrope', sans-serif; /* Définit la police de caractère principale */
+  font-size: 1em; /* Taille de police de base */
+  background-color: #1f2039; /* Couleur de fond de la page */
 }
 
+/* Style pour tous les liens */
 a {
-  color: #242424;
-  text-decoration: none;
+  color: #242424; /* Couleur du texte des liens */
+  text-decoration: none; /* Supprime le soulignement par défaut des liens */
 }
 
+/* Style pour les éléments <em> (emphase) */
 em {
-  color: #a5b4fc;
-  font-style: normal;
+  color: #a5b4fc; /* Couleur différente pour faire ressortir */
+  font-style: normal; /* Annule l'italique par défaut */
 }
 
+/* Style pour le titre principal */
 h1 {
-  font-size: 3.5em;
-  color: #a5b4fc;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5em; /* Taille très grande pour le titre */
+  color: #a5b4fc; /* Couleur du texte du titre */
+  font-family: 'Montserrat', sans-serif; /* Police spécifique pour le titre */
 }
 
+/* Style pour le titre secondaire */
 h2 {
-  color: #f9f8ff;
+  color: #f9f8ff; /* Couleur claire pour se détacher du fond sombre */
 }
 
+/* Style pour les paragraphes et les listes */
 p,
 li {
-  font-size: 1.1em;
-  color: #f9f8ff;
+  font-size: 1.1em; /* Taille légèrement plus grande que la normale */
+  color: #f9f8ff; /* Couleur claire pour le texte */
 }
 
+/* Styles pour l'en-tête et le pied de page */
 header,
 footer {
-  background-color: white;
-  padding: 20px 50px;
+  background-color: white; /* Fond blanc */
+  padding: 20px 50px; /* Espacement intérieur (haut/bas 20px, gauche/droite 50px) */
 }
 
+/* Style pour un bouton ou appel à l'action */
 .cta {
-  background: linear-gradient(#8e86b5, #acaeed);
-  color: white;
-  border-radius: 50px;
-  padding: 20px 30px;
+  display: inline-block; /* Affichage en ligne avec possibilité de définir largeur/hauteur */
+  background: linear-gradient(#8e86b5, #acaeed); /* Dégradé du violet clair au violet foncé */
+  color: white; /* Texte blanc */
+  border-radius: 50px; /* Coins arrondis */
+  padding: 20px 30px; /* Espacement intérieur du bouton */
 }
 
+/* Effet au survol des liens */
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Soulignement quand on survole */
 }
 
+/* Effet au survol du bouton .cta */
 .cta:hover {
-  background: linear-gradient(#696484, #8788ba);
-  text-decoration: none;
-
+  background: linear-gradient(#696484, #8788ba); /* Dégradé plus foncé */
+  text-decoration: none; /* Supprime le soulignement éventuel */
 }
+
+/* Classe pour des icônes avec lien */
 .lien-icone{
-    margin-left: 30px;
+    margin-left: 30px; /* Décalage à gauche pour espacer les icônes */
 }
+
+/* Effet au survol des icônes */
 .lien-icone:hover {
-  opacity: 0.5;
+  opacity: 0.5; /* Devient semi-transparent */
 }
 
+/* Conteneur de contenu carré */
 .carre-contenu {
-  border-right: 1px solid #8e86b5;
-  border-bottom: 1px solid #8e86b5;
-  padding: 50px;
+  border-right: 1px solid #8e86b5; /* Bord droit violet */
+  border-bottom: 1px solid #8e86b5; /* Bord inférieur violet */
+  padding: 50px; /* Espacement intérieur */
 }
 
+/* Titre dans le carré */
 .carre-contenu h2 {
-  margin-top: 30px;
+  margin-top: 30px; /* Espace au-dessus du titre */
 }
 
+/* Liste dans le carré */
 .carre-contenu ul {
-  margin-top: 30px;
+  margin-top: 30px; /* Espace au-dessus de la liste */
 }
 
+/* Section générale */
 section {
-  padding: 80px;
+  padding: 80px; /* Espacement intérieur important pour aérer */
 }
 
+/* Partie "À propos" centrée */
 .a-propos-main {
-  width: 50%;
-  margin: auto;
-}
-footer, nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.accueil-intro
-{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 50%;
-  margin: auto; 
-}
-nav a {
-  margin-left: 30px;
-}
-.accueil-photos div
-{
- display: flex;
- flex-direction: row;
- justify-content: center;
- gap: 15px;
- margin-bottom: 15 px;
-}
-.accueil-photos h2 {
-  color: #242424;
-  text-align: center;
-  margin-bottom: 80px;
-}
-.accueil-photos {
-  background-color: white;
-  padding: 80px;
-}
-.portfolio-section-photos {
-  background-color: white;
+  width: 50%; /* Largeur de 50% du parent */
+  margin: auto; /* Centré horizontalement */
 }
 
+/* Pied de page et navigation en flexbox */
+footer, nav {
+  display: flex; /* Utilisation de flexbox */
+  flex-direction: row; /* Alignement horizontal */
+  justify-content: space-between; /* Espace entre les éléments */
+  align-items: center; /* Alignement vertical centré */
+}
+
+/* Introduction sur la page d'accueil */
+.accueil-intro {
+  display: flex; /* Flexbox */
+  flex-direction: row; /* Alignement horizontal */
+  align-items: center; /* Centré verticalement */
+  width: 50%; /* Largeur de 50% */
+  margin: auto; /* Centré horizontalement */
+}
+
+/* Espacement des liens dans le nav */
+nav a {
+  margin-left: 30px; /* Décalage à gauche pour espacer les liens */
+}
+
+/* Conteneur pour les photos de l'accueil */
+.accueil-photos div {
+ display: flex; /* Flexbox */
+ flex-direction: row; /* Ligne */
+ justify-content: center; /* Centre horizontalement */
+ gap: 15px; /* Espace entre les images */
+ margin-bottom: 15 px; /* Marge en bas (attention, il y a un petit bug : 'px' avec espace) */
+ padding: 6px; /* Padding autour */
+}
+
+/* Titre de la section photos */
+.accueil-photos h2 {
+  color: #242424; /* Couleur sombre */
+  text-align: center; /* Centré horizontalement */
+  margin-bottom: 80px; /* Marge sous le titre */
+}
+
+/* Section photos avec fond blanc */
+.accueil-photos {
+  background-color: white; /* Fond blanc */
+  padding: 80px; /* Espacement intérieur */
+}
+
+/* Section portfolio */
+.portfolio-section-photos {
+  background-color: white; /* Fond blanc */
+}
+
+/* Titre portfolio */
 .portfolio-section-photos h2 {
-  color: #242424;
-  margin-bottom: 80px;
+  color: #242424; /* Couleur sombre */
+  margin-bottom: 80px; /* Marge sous le titre */
 }
+
+/* Grille pour paysages */
 .grid-paysages {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 300px 300px 300px; 
-  gap: 15px;
+  display: grid; /* Utilisation de CSS Grid */
+  grid-template-columns: 1fr 1fr 1fr; /* 3 colonnes égales */
+  grid-template-rows: 300px 300px 300px; /* 3 lignes de 300px */
+  gap: 15px; /* Espace entre les cases */
 }
+
+/* Grille pour portraits */
 .grid-portraits {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 colonnes */
+  grid-template-rows: 300px 300px; /* 2 lignes de 300px */
   gap: 15px;
 }
+
+/* Images dans les grilles */
 .grid-paysages img,
 .grid-portraits img {
-  width: 100%;
-  height: 100%;
-  /* Même si vous ne connaissez pas cette propriété, vous en aurez besoin pour permettre aux images de respecter les dimensions de la grid CSS */
-  object-fit: cover;
+  width: 100%; /* Largeur totale de la case */
+  height: 100%; /* Hauteur totale de la case */
+  object-fit: cover; /* Remplit la case sans déformer l'image */
+}
+
+/* Conteneur pour chaque photo avec lien */
+.lien-conteneur-photo {
+  position: relative; /* Pour positionner les éléments à l'intérieur de façon absolue */
+}
+
+/* Couche qui apparaît au survol */
+.photo-hover {
+  display: flex; /* Flexbox */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  position: absolute; /* Position absolue par rapport au parent */
+  top: 0%; /* En haut */
+  left:0%; /* À gauche */
+  right: 0%;
+  bottom: 0%; 
+  color: white; /* Texte blanc */
+  background-color: rgba(0,0,0,0.7); /* Fond noir semi-transparent */
+  display: none; /* Initialement invisible */
+}
+
+/* Au survol du conteneur photo, la couche devient visible */
+.lien-conteneur-photo:hover .photo-hover {
+  display : flex;
 }
