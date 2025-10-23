@@ -78,39 +78,9 @@ a:hover {
 .lien-icone:hover {
   opacity: 0.5; /* Devient semi-transparent */
 }
-
-/* Conteneur de contenu carré */
-.carre-contenu {
-  border-right: 1px solid #8e86b5; /* Bord droit violet */
-  border-bottom: 1px solid #8e86b5; /* Bord inférieur violet */
-  padding: 50px;
-  margin-bottom: 80px; /* Espacement intérieur */
-}
-
-/* Titre dans le carré */
-.carre-contenu h2 {
-  margin-top: 30px; /* Espace au-dessus du titre */
-}
-
-/* Liste dans le carré */
-.carre-contenu ul {
-  margin-top: 30px; /* Espace au-dessus de la liste */
-}
-.carre-contenu + div {
-  text-align: center;
-}
-
-/* Section générale */
 section {
-  padding: 80px; /* Espacement intérieur important pour aérer */
+  padding: 80px;
 }
-
-/* Partie "À propos" centrée */
-.a-propos-main {
-  width: 50%; /* Largeur de 50% du parent */
-  margin: auto; /* Centré horizontalement */
-}
-
 /* Pied de page et navigation en flexbox */
 footer, nav {
   display: flex; /* Utilisation de flexbox */
@@ -118,113 +88,8 @@ footer, nav {
   justify-content: space-between; /* Espace entre les éléments */
   align-items: center; /* Alignement vertical centré */
 }
-
-/* Introduction sur la page d'accueil */
-.accueil-intro {
-  display: flex;
-  flex-direction: row;
-  width: 60%;
-  align-items: flex-start;
-  margin: auto;
-}
-
 /* Espacement des liens dans le nav */
 nav a {
   margin-left: 30px;
    /* Décalage à gauche pour espacer les liens */
-}
-
-/* Conteneur pour les photos de l'accueil */
-.accueil-photos div {
- display: flex; /* Flexbox */
- flex-direction: row; /* Ligne */
- justify-content: center; /* Centre horizontalement */
- gap: 15px; /* Espace entre les images */
- margin-bottom: 15 px; /* Marge en bas (attention, il y a un petit bug : 'px' avec espace) */
- padding: 6px; /* Padding autour */
-}
-
-/* Titre de la section photos */
-.accueil-photos h2 {
-  color: #242424; /* Couleur sombre */
-  text-align: center; /* Centré horizontalement */
-  margin-bottom: 80px; /* Marge sous le titre */
-}
-
-/* Section photos avec fond blanc */
-.accueil-photos {
-  background-color: white; /* Fond blanc */
-  padding: 80px; /* Espacement intérieur */
-}
-.accueil-introduction h1 {
-  margin-bottom: 15px;
-}
-
-.accueil-introduction p {
-  margin-bottom: 30px;
-}
-
-.accueil-introduction div {
-  padding-right: 80px;
-}
-
-/* Section portfolio */
-.portfolio-section-photos {
-  background-color: white; /* Fond blanc */
-}
-
-/* Titre portfolio */
-.portfolio-section-photos h2 {
-  color: #242424; /* Couleur sombre */
-  margin-bottom: 30px; /* Marge sous le titre */
-  margin-top: 30px;
-}
-
-/* Grille pour paysages */
-.grid-paysages {
-  display: grid; /* Utilisation de CSS Grid */
-  grid-template-columns: 1fr 1fr 1fr; /* 3 colonnes égales */
-  grid-template-rows: 300px 300px 300px; /* 3 lignes de 300px */
-  gap: 15px; /* Espace entre les cases */
-}
-
-/* Grille pour portraits */
-.grid-portraits {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* 3 colonnes */
-  grid-template-rows: 300px 300px; /* 2 lignes de 300px */
-  gap: 15px;
-}
-
-/* Images dans les grilles */
-.grid-paysages img,
-.grid-portraits img {
-  width: 100%; /* Largeur totale de la case */
-  height: 100%; /* Hauteur totale de la case */
-  object-fit: cover; /* Remplit la case sans déformer l'image */
-}
-
-/* Conteneur pour chaque photo avec lien */
-.lien-conteneur-photo {
-  position: relative; /* Pour positionner les éléments à l'intérieur de façon absolue */
-}
-
-/* Couche qui apparaît au survol */
-.photo-hover {
-  display: flex; /* Flexbox */
-  justify-content: center; /* Centre horizontalement */
-  align-items: center; /* Centre verticalement */
-  position: absolute; /* Position absolue par rapport au parent */
-  top: 0%; /* En haut */
-  left:0%; /* À gauche */
-  right: 0%;
-  bottom: 0%; 
-  color: white; /* Texte blanc */
-  background-color: rgba(0,0,0,0.7); /* Fond noir semi-transparent */
-  display: none; /* Initialement invisible */
-}
-
-/* Au survol du conteneur photo, la couche devient visible */
-.lien-conteneur-photo:hover .photo-hover {
-  display : flex;
 }
