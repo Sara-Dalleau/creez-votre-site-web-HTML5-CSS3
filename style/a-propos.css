@@ -41,3 +41,11 @@
     border: 1px solid #8e86b5;
     padding: 20px;
   }
+  h1, h2 {
+  text-align: center;
+}
+  @media screen and (max-width: 996px) {
+   .section-tarifs {
+    display: none;
+   }
+  }
