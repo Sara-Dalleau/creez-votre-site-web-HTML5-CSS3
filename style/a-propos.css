@@ -21,3 +21,23 @@
     width: 50%;
     margin: auto;
   }
+  h2 {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  table {
+    border-collapse: collapse;
+    margin: auto;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+  td {
+    border: 1px solid #8e86b5;
+    padding: 80px;
+   
+  }
+  th {
+    border: 1px solid #8e86b5;
+    padding: 20px;
+  }
